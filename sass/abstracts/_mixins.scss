@@ -1,0 +1,9 @@
+//Para que un contenedor con hijos con comportamiento flotante 
+//pueda tener las dimensiones de los hijos que contiene. 
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
