@@ -1,6 +1,6 @@
 # Natours web
 
-Creación de web con buenas practicas de diseño con css
+Creación de web con buenas practicas de diseño con css y layout basado en  floats
 
 ```js
   npm install
