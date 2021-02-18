@@ -4,12 +4,14 @@
   "description": "starter",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css"
+    "dev": "./node_modules/.bin/live-server",
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "live-server": "^1.2.1",
     "node-sass": "^5.0.0"
   }
 }
