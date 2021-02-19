@@ -1,6 +1,5 @@
 .row {
   max-width: $grid-width;
-  background-color: #eee;
   margin: 0 auto;
   
   //Aplica a todos con la clase row, menos al ultimo hijo
@@ -13,7 +12,6 @@
   //Selecciona todos los elementos que tengan el atributo class y cuyo valor
   //al inicio contenga  'col-', esto es gracias a simbolo '^'
   [class^="col-"] {
-    background-color: orangered;
     float: left;
 
     &:not(:last-child) {
