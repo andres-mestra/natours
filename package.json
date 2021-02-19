@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "./node_modules/.bin/live-server",
-    "compile:sass": "node-sass sass  -o css/ -w"
+    "compile:sass": "node-sass sass/style.scss  css/style.css -w"
   },
   "keywords": [],
   "author": "",
