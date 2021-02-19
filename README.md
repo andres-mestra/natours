@@ -2,6 +2,11 @@
 
 Creación de web con buenas practicas de diseño con css y layout basado en  floats
 
+Preview: 
+
+https://andres-mestra.github.io/natours/
+
+
 ```js
   npm install
 ```
