@@ -106,6 +106,9 @@ body {
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
 
+.u-margin-top-big {
+  margin-bottom: 8rem; }
+
 .btn:link, .btn:visited {
   display: inline-block;
   font-size: 1.6rem;
@@ -126,6 +129,10 @@ body {
 .btn--white {
   background-color: #fff;
   color: #777; }
+
+.btn--green-dark {
+  background-color: #28b485;
+  color: #fff; }
 
 .btn--animated {
   animation: moveInBotton .5s ease-out .75s;
@@ -348,4 +355,4 @@ body {
 .section-tours {
   background-color: #f7f7f7;
   margin-top: -10rem;
-  padding: 25rem 0 50rem 0; }
+  padding: 25rem 0 5rem 0; }
