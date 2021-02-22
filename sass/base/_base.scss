@@ -1,10 +1,16 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
 }
 
 html {
   /*En base 16px, medida por default del  navegador:  osea 1rem = 62.5% = 10px*/
   font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
 }
