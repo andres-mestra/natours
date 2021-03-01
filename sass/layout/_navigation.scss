@@ -6,12 +6,14 @@
 
   &__button {
     background-color: $color-white;
+    cursor: pointer;
     height: 7rem;
     width: 7rem;
     position: fixed;
     top: 6rem;
     right: 6rem;
     border-radius: 50%;
+    text-align: center;
     z-index:999;
   }
 
@@ -88,6 +90,8 @@
 
   }
 
+  //Funcionalidad
+
   &__checkbox:checked ~ &__background {
     transform: scale(80);
   }
@@ -95,6 +99,46 @@
   &__checkbox:checked ~ &__nav {
     opacity: 1;
     width: 100%;
+  }
+
+  //Icono
+  &__icon {
+    position: relative;
+    margin-top: 3.4rem;
+
+    &,
+    &::before,
+    &::after{
+      background-color: $color-grey-dark-3;
+      width: 3rem;
+      height: 2px;
+      display: inline-block;
+    }
+
+    &::before,
+    &::after{
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all .2s;
+    }
+
+    &::before {
+      top: -.8rem;
+    }
+
+    &::after {
+      top: .8rem;
+    }
+
+  }
+
+  &__button:hover &__icon::before {
+    top: -1rem;
+  }
+
+  &__button:hover &__icon::after {
+    top: 1rem;
   }
 
 }
