@@ -1026,8 +1026,8 @@ body {
 
 @media (max-width: 37.5em) {
   .header {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 87.5vh, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 87.5vh, 0 100%);
   }
 }
 
@@ -1391,6 +1391,12 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -25vh;
+}
+
+@media (max-width: 75em) {
+  .section-about {
+    margin-top: -15vh;
+  }
 }
 
 .section-features {
