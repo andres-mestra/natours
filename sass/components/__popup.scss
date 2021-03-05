@@ -23,11 +23,27 @@
     opacity: 0;
     transform:translate( -50%, -50%) scale(.25);
     transition: .5s .2s;
+
+    @include respond(tab-land) {
+      width: 90%;
+    }
+
+    @include respond(phone) {
+      position: relative;
+      display: block;
+      height: 90vh;
+    }
   }
 
   &__left {
     width: 33.333%;
     display: table-cell; //son celdas y se les dara la misma altura
+
+    @include respond(phone) {
+      float: left;
+      height: 100%;
+      width: 100%;
+    }
   }
 
   &__right {
@@ -35,6 +51,21 @@
     display: table-cell; //son celdas y se les dara la misma altura
     padding: 3rem 5rem;
     vertical-align: middle; //alinea el contenido centrando verticalmente
+
+    @include respond(tab-land) {
+      padding:2rem 3rem;
+    }
+
+    @include respond(phone) {
+      align-content: center;
+      display: relative;
+      padding: auto 3rem;
+      position: absolute;
+      bottom: 0;
+      height: 80%;
+      width: 100%;
+      background-color: $color-white;
+    }
   }
 
   &__img {
@@ -45,12 +76,20 @@
   &__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
-
     column-count: 2; //Divide el contenido en dos columnas
     column-gap: 4rem; // Espacio entre columnas 
     column-rule: 1px solid $color-grey-light-2;
-
     hyphens: auto; //Coloca los guiones de la continuación de las palabras
+
+    @include respond(tab-land) {
+      margin-bottom:2rem;
+    }
+
+    @include respond(tab-port) {
+      column-count: 1; 
+      column-gap: 0; 
+      column-rule: none;
+    }
   }
 
   //Open state
