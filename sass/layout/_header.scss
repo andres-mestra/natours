@@ -12,8 +12,8 @@
 
   // se aplicara a las  resoluciones por encima de 192dpi
   // y si el el ancho de la pantalla es mayor a 600px
-  @media (min-resolucion: 192dpi) and (min-width: 37.5em) ,
-         (min-width: 125em) {  // O si el width es mayor a 2000px
+  @media only screen and (min-resolucion: 192dpi) and (min-width: 37.5em) ,
+         only screen and (min-width: 125em) {  // O si el width es mayor a 2000px
     background-image: linear-gradient(
     to right bottom, 
     rgba($color-primary-light, 0.8),
